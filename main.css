@@ -1,0 +1,123 @@
+/*wylacza scrollowanie, zeby strona sie nie gibala jak scrollujesz iframy*/
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+/*
+body {
+    background-color: blue;
+}
+
+.pz-bg {    
+    
+    min-width:1200px;
+    min-height:600px;
+    width:100vw;
+    height:100vh;
+    background-color:blue;
+    }
+.pz-section {    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right:auto;
+}
+*/
+
+
+#img-over{
+    z-index: 5;
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    
+}
+
+
+
+
+
+
+* {margin:0; padding: 0;}
+body {text-align: center}
+
+
+
+.imdesc {display: inline-block; vertical-align: middle; position: relative}
+.imdesc img {vertical-align: middle;}
+.imdesc p {text-align: center; background: #fc0;}
+
+
+/*
+
+everything stays always the same except scale should be relative to imgs width
+*/
+
+/*
+#img-under{
+     width:1700px;
+}
+#mac {
+    position: absolute;
+    transform:translate(-50%, -50%) scale(0.779) ;
+    top: 40.1%;   left: 64.8%;
+    width: 1193px; height: 629px;
+    border:1;
+    border-width: 0px;
+}
+*/
+
+#img-over {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 11.4%;    
+    left:17.6%;
+    
+}
+
+#pasek1{
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 6.9%;
+}
+
+#pasek2{
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 28.4%;
+}
+
+#pasek3{
+    position:absolute;
+    transform: translate(-100%,-50%);
+    top: 38%;
+    left: 37.5%;
+}
+
+#pasek4{
+    position:absolute;
+    transform: translate(0%,-50%);
+    top: 38%;
+    left: 92.1%;
+}
+
+#pasek5{
+    position:absolute;
+    transform: translate(-50%,0%);
+    top: 65.7%;
+    left: 64.8%;    
+}
+
+.background {
+    background-color: rgb(112,3,37);
+}
+
+
+
+
+
+
