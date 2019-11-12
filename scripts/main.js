@@ -19,15 +19,31 @@ function arrange(){
     
     let scaleProportion = imgWidth/initImgWidth;
     let scale = initScale*scaleProportion;
-    document.getElementById('img-under').setAttribute("style", "width:" + imgWidth + "px");
-    document.getElementById('mac').setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + scale + "); top: 40.1%; left: 64.8%; width: 1200px; height: 629px; border:none");
+    
+    
+    Array.prototype.forEach.call(document.getElementsByClassName("img-under"), function(el) {
+        el.setAttribute("style", "width:" + imgWidth + "px");
+    });    
+//    document.getElementById('img-under').setAttribute("style", "width:" + imgWidth + "px");
+//    document.getElementById('img-under2').setAttribute("style", "width:" + imgWidth + "px");
+    
+    Array.prototype.forEach.call(document.getElementsByClassName("mac"), function(el) {
+        el.setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + scale + "); top: 40.1%; left: 64.8%; width: 1200px; height: 629px; border:none");
+    }); 
+//    document.getElementById('mac').setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + scale + "); top: 40.1%; left: 64.8%; width: 1200px; height: 629px; border:none");
+//    document.getElementById('mac2').setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + scale + "); top: 40.1%; left: 64.8%; width: 1200px; height: 629px; border:none");
+
     
     //iphone
     let initMScale = 1;
     let mScale = initMScale*scaleProportion;
     
-    document.getElementById('iphone').setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + mScale + "); top: 50.6%; left: 17.67%; width: 363.5px; height: 616px; border:none"); 
-    
+    Array.prototype.forEach.call(document.getElementsByClassName("iphone"), function(el) {
+        el.setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + mScale + "); top: 50.6%; left: 17.67%; width: 363.5px; height: 616px; border:none"); 
+    }); 
+//    document.getElementById('iphone').setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + mScale + "); top: 50.6%; left: 17.67%; width: 363.5px; height: 616px; border:none"); 
+//    document.getElementById('iphone2').setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + mScale + "); top: 50.6%; left: 17.67%; width: 363.5px; height: 616px; border:none"); 
+
     
     
     
@@ -35,13 +51,21 @@ function arrange(){
     let initIphoneFontSize = 0.9981883668807687;
     let IphoneFontSize = initIphoneFontSize*scaleProportion;
     
-    document.getElementById('iphone-address').setAttribute("style", "position: absolute; transform:translate(-50%, -50%); top: 15.5%; left: 17.67%;  font-size: " + IphoneFontSize + "em;"); 
+    Array.prototype.forEach.call(document.getElementsByClassName("iphone-address"), function(el) {
+        el.setAttribute("style", "position: absolute; transform:translate(-50%, -50%); top: 15.5%; left: 17.67%;  font-size: " + IphoneFontSize + "em;"); 
+    }); 
+//    document.getElementById('iphone-address').setAttribute("style", "position: absolute; transform:translate(-50%, -50%); top: 15.5%; left: 17.67%;  font-size: " + IphoneFontSize + "em;"); 
+//    document.getElementById('iphone-address2').setAttribute("style", "position: absolute; transform:translate(-50%, -50%); top: 15.5%; left: 17.67%;  font-size: " + IphoneFontSize + "em;"); 
     
     
     let initMacFontSize = 5.477862988979829;
     let MacFontSize = initMacFontSize*scaleProportion;
   
-    document.getElementById('mac-address').setAttribute("style", "transform: translate(0%, -50%) ; position: absolute; top: 13.8%; left: 41%;  font-size: " + MacFontSize + "px;"); 
+    Array.prototype.forEach.call(document.getElementsByClassName("mac-address"), function(el) {
+        el.setAttribute("style", "transform: translate(0%, -50%) ; position: absolute; top: 13.8%; left: 41%;  font-size: " + MacFontSize + "px;"); 
+    }); 
+//    document.getElementById('mac-address').setAttribute("style", "transform: translate(0%, -50%) ; position: absolute; top: 13.8%; left: 41%;  font-size: " + MacFontSize + "px;"); 
+//    document.getElementById('mac-address2').setAttribute("style", "transform: translate(0%, -50%) ; position: absolute; top: 13.8%; left: 41%;  font-size: " + MacFontSize + "px;"); 
     
     //fullscreen - wymaga dopieszczenia i obnizenia navbaru 
 //    document.getElementById('iphone').setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + mScale + "); top: 50.2%; left: 17.62%; width: 354px; height: 766px; border:none; border-radius:35px");
@@ -51,32 +75,42 @@ function arrange(){
     
   //  paski 
     
-// you gotta do the same shit for width !!!!!!!!!!!!!!
+
      
     let imgInitialHeight = document.getElementById('img-under').clientHeight;
     let imgInitialWidth = document.getElementById('img-under').clientWidth;
     
     let pasekIphoneScale = 0.7770700636942676;   
-    let pasekIphoneHeight = imgInitialHeight*pasekIphoneScale;    
-    document.getElementById('pasek1').setAttribute("style", "height:" + pasekIphoneHeight + "px");
-    document.getElementById('pasek2').setAttribute("style", "height:" + pasekIphoneHeight + "px");
+    let pasekIphoneHeight = imgInitialHeight*pasekIphoneScale; 
+    
+    Array.prototype.forEach.call(document.getElementsByClassName("pasek1"), function(el) {
+        el.setAttribute("style", "height:" + pasekIphoneHeight + "px"); 
+    }); 
+    
+    Array.prototype.forEach.call(document.getElementsByClassName("pasek2"), function(el) {
+        el.setAttribute("style", "height:" + pasekIphoneHeight + "px"); 
+    }); 
     
     let pasekMacHeightScale1 = 0.59;
     let pasekMacWidthScale1 = 66.53;
     let pasekMacHeight1 = imgInitialHeight*pasekMacHeightScale1;
     let pasekMacWidth1 = imgInitialWidth/pasekMacWidthScale1;
-    document.getElementById('pasek3').setAttribute("style", "height:" + pasekMacHeight1 + "px; width:" + pasekMacWidth1 + "px");
-    document.getElementById('pasek4').setAttribute("style", "height:" + pasekMacHeight1 + "px; width:" + pasekMacWidth1 + "px");
+    
+    Array.prototype.forEach.call(document.getElementsByClassName("pasek3"), function(el) {
+        el.setAttribute("style", "height:" + pasekMacHeight1 + "px; width:" + pasekMacWidth1 + "px");
+    }); 
+    Array.prototype.forEach.call(document.getElementsByClassName("pasek4"), function(el) {
+        el.setAttribute("style", "height:" + pasekMacHeight1 + "px; width:" + pasekMacWidth1 + "px");
+    }); 
     
     let pasekMacHeightScale2 = 78.5;
     let pasekMacWidthScale2 = 0.572655690765927;
     let pasekMacHeight2 = imgInitialHeight/pasekMacHeightScale2;
     let pasekMacWidth2 = imgInitialWidth*pasekMacWidthScale2;
     
-    document.getElementById('pasek5').setAttribute("style", "height:" + pasekMacHeight2 + "px; width:" + pasekMacWidth2 + "px");
-    
-//    height:10px;
-//    width: 800px;
+    Array.prototype.forEach.call(document.getElementsByClassName("pasek5"), function(el) {
+        el.setAttribute("style", "height:" + pasekMacHeight2 + "px; width:" + pasekMacWidth2 + "px");
+    }); 
     
     
     
