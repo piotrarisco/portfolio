@@ -153,10 +153,10 @@ body.fp-viewing-0-slide3 .fp-controlArrow.fp-next {
 }
 
 body.fp-viewing-0-slide5 .fp-controlArrow.fp-prev {    
-    border-color: transparent rgb(64, 64, 64) transparent transparent;
+    border-color: transparent rgb(64, 64, 64) transparent transparent !important;
 }
 body.fp-viewing-0-slide5 .fp-controlArrow.fp-next {    
-    border-color: transparent transparent transparent rgb(64, 64, 64);
+    border-color: transparent transparent transparent rgb(64, 64, 64) !important;
 }
 
 
