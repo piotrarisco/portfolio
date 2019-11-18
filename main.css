@@ -77,6 +77,36 @@ body {text-align: center}
     margin:0;
 }
 
+
+.link {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:3%;
+    border: none;
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+    width:90%;
+}
+
+.link:hover {
+    color:white;
+}
+
+.link_black {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:3%;
+    border: none;
+    color:rgb(30,30,30);
+    font-family: 'Source Sans Pro', sans-serif;
+    width:90%;
+}
+.link_black:hover {
+    color:rgb(30,30,30);
+}
+
 .bg-color1 {
     background-color: rgb(112,3,37);
 }
@@ -87,6 +117,10 @@ body {text-align: center}
 
 .bg-color3 {
     background-color: rgb(130,171,255);
+}
+
+bg-color4 {
+    background-color: white;
 }
 
 
@@ -102,17 +136,26 @@ body.fp-viewing-0-slide1 .fp-slidesNav ul li a span,
 */
 
  
-body.fp-viewing-0-slide1 .fp-slidesNav ul li a span, body.fp-viewing-0-slide2 .fp-slidesNav ul li a span, body.fp-viewing-0-slide4 .fp-slidesNav ul li a span{    
+body.fp-viewing-0-slide1 .fp-slidesNav ul li a span, 
+body.fp-viewing-0-slide2 .fp-slidesNav ul li a span, 
+body.fp-viewing-0-slide4 .fp-slidesNav ul li a span{    
     background-color:white !important;
     
 }
 
-body.fp-viewing-0-slide3 .fp-controlArrow.fp-prev {
-    
+
+
+body.fp-viewing-0-slide3 .fp-controlArrow.fp-prev {    
     border-color: transparent rgb(64, 64, 64) transparent transparent;
 }
-body.fp-viewing-0-slide3 .fp-controlArrow.fp-next {
-    
+body.fp-viewing-0-slide3 .fp-controlArrow.fp-next {    
+    border-color: transparent transparent transparent rgb(64, 64, 64);
+}
+
+body.fp-viewing-0-slide5 .fp-controlArrow.fp-prev {    
+    border-color: transparent rgb(64, 64, 64) transparent transparent;
+}
+body.fp-viewing-0-slide5 .fp-controlArrow.fp-next {    
     border-color: transparent transparent transparent rgb(64, 64, 64);
 }
 
